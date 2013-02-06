@@ -11,3 +11,12 @@
 *.lai
 *.la
 *.a
+
+#for Qt
+*.pro.user
+
+# for Mac
+*.app
+*.app/*
+*.DS_Store
+

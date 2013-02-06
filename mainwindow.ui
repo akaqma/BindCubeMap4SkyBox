@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BindCubeMap4SkyBox</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="GLWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="GLWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>180</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="GLWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>180</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="GLWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>180</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="GLWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="GLWidget" name="widget_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>350</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>320</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>320</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>320</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>320</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>490</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>150</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Q">
+    <property name="geometry">
+     <rect>
+      <x>583</x>
+      <y>481</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuCommand_C">
+    <property name="title">
+     <string>Command(&amp;C)</string>
+    </property>
+    <addaction name="actionBind_to_CubeMap_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit_Q_3"/>
+   </widget>
+   <addaction name="menuCommand_C"/>
+  </widget>
+  <action name="actionQuit_Q">
+   <property name="text">
+    <string>Quit(&amp;Q)</string>
+   </property>
+  </action>
+  <action name="actionQuit_Q_2">
+   <property name="text">
+    <string>Quit(&amp;Q)</string>
+   </property>
+  </action>
+  <action name="actionBind_to_CubeMap_Image">
+   <property name="text">
+    <string>Bind to CubeMap Image(&amp;B)</string>
+   </property>
+  </action>
+  <action name="actionQuit_Q_3">
+   <property name="text">
+    <string>Quit(&amp;Q)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>AddImagePath(std::string)</signal>
+    <slot>BtnSetImage()</slot>
+    <slot>SignalPath1()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit_Q_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_5</receiver>
+   <slot>BtnSetImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_4</receiver>
+   <slot>BtnSetImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>566</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_6</receiver>
+   <slot>BtnSetImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>423</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_3</receiver>
+   <slot>BtnSetImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_2</receiver>
+   <slot>BtnSetImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>BtnSetImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>76</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>AddImagePath(std::string)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReceiveImagePath0(std::string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget_2</sender>
+   <signal>AddImagePath(std::string)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReceiveImagePath1(std::string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget_3</sender>
+   <signal>AddImagePath(std::string)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReceiveImagePath2(std::string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>374</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget_4</sender>
+   <signal>AddImagePath(std::string)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReceiveImagePath3(std::string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget_5</sender>
+   <signal>AddImagePath(std::string)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReceiveImagePath4(std::string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget_6</sender>
+   <signal>AddImagePath(std::string)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReceiveImagePath5(std::string)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBind_to_CubeMap_Image</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>BindCubeMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Q</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ReceiveImagePath0(std::string)</slot>
+  <slot>ReceiveImagePath1(std::string)</slot>
+  <slot>ReceiveImagePath2(std::string)</slot>
+  <slot>ReceiveImagePath3(std::string)</slot>
+  <slot>ReceiveImagePath4(std::string)</slot>
+  <slot>ReceiveImagePath5(std::string)</slot>
+  <slot>BindCubeMap()</slot>
+ </slots>
+</ui>
